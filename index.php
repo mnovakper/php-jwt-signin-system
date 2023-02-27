@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
     {
         $_SESSION['MESSAGE'] = "Korisničko ime i lozinka su obavezni";
         header('location: /PROJECTS/php-jwt-signin-system/');
-        return; // da ne ide dalje
+        return;
     }
 
     $_SESSION['MESSAGE'] = '';
@@ -90,7 +90,7 @@ if(isset($_POST['submit']))
                     $_SESSION['MESSAGE'] = "Access token je generiran";
 
                     header("location: /PROJECTS/php-jwt-signin-system/");
-                    return; // da ne ide dalje
+                    return;
                 }
 
             } else {
