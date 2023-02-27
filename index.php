@@ -176,6 +176,7 @@ if(isset($_POST['submit']))
     <button class="w-100 btn btn-lg btn-primary mt-3 mb-3" type="submit" name="submit">Sign in</button>
 
     <?php
+    // info o stanju tokena
     if (isset($_SESSION['access_token_expires']))
     {
       echo "<div class='alert alert-success text-center'>Access token je valjan do " . $_SESSION['access_token_expires'] . "</div>";
