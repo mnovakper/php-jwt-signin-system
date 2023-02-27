@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Test access i refresh tokena (firebase/php-jwt package)
+ * Testna implementacija access i refresh tokena koristeći firebase/php-jwt paket
  */
 
 session_start();
