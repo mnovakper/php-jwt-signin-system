@@ -38,7 +38,7 @@ if(isset($_POST['submit']))
         // dodano vrijeme za refresh token
         $issuedRefresh = new \DateTime('now +10 minutes', new \DateTimeZone('Europe/Zagreb'));
 
-        //expire za refresh token
+        // expire za refresh token
         $expireRefresh = $issuedRefresh->format("d-m-Y h:i:s");
 
         // expire za access token
