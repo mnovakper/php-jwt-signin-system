@@ -182,7 +182,7 @@ if(isset($_POST['submit']))
       echo "<div class='alert alert-success text-center'>Access token je valjan do " . $_SESSION['access_token_expires'] . "</div>";
       echo "<div class='alert alert-success text-center'>Refresh token je valjan do " . $_SESSION['refresh_token_expires'] . "</div>";
     }
-    elseif (isset($_SESSION['MESSAGE']))
+    elseif (isset($_SESSION['MESSAGE'])) // ako je refresh token istekao
     {
       echo "<div class='alert alert-danger text-center'>" . $_SESSION['MESSAGE'] . "</div>";
     }
