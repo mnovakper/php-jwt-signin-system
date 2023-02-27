@@ -192,6 +192,7 @@ if(isset($_POST['submit']))
     ?>
 
     <?php
+    // brisanje tokena iz baze
     if (isset($_SESSION['access_token'])): ?>
     <form action="clear.php?clear=yes">
         <input class="btn btn-warning" type="submit" value="Obriši tokene">
